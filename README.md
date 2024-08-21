@@ -1,4 +1,4 @@
-MapQuest: India
+#MapQuest: India
 MapQuest: India is an interactive Python-based game that tests your knowledge of India's states and union territories. Using the turtle graphics module, the game displays a map of India and challenges players to guess the names of states and UTs. Correct guesses are marked on the map at their corresponding coordinates. The goal is to identify all 37 states and union territories.
 
 Features
