@@ -46,12 +46,10 @@
 
 3.Install required dependencies:
 
-    ```bash
      pip install pandas
-
+     
 4. Run the game:
 
     ```bash
     python India_states.py
-
     
