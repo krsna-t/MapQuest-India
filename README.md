@@ -11,7 +11,7 @@
 
 ## How to Play
 
-1. Run the Python script `MapQuest_India.py`.
+1. Run the Python script `India_states.py`.
 2. A map of India will be displayed.
 3. You will be prompted to guess the names of Indian states and union territories.
 4. If your guess is correct, it will be marked on the map at its location.
@@ -25,3 +25,33 @@
   
   ```bash
   pip install pandas
+
+## Files
+
+- `India_states.py`: The main game script.
+- `state.csv`: CSV file containing state/UT names and their coordinates.
+- `map_resized.gif`: The map of India used in the game.
+
+## Installation
+
+1. Clone this repository:
+
+   ```bash
+   git clone https://github.com/yourusername/mapquest-india.git
+
+2. Navigate to the project directory:
+
+     ```bash
+     cd mapquest-india
+
+3.Install required dependencies:
+
+    ```bash
+     pip install pandas
+
+4. Run the game:
+
+    ```bash
+    python India_states.py
+
+    
