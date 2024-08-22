@@ -19,7 +19,7 @@ t.penup()
 
 
 while len(guessed_s_ut) < 37:
-    answer_state=screen.textinput(title=f"State & UT Guessed:len{guessed_s_ut}/37",prompt="Name Indian States & UT").title()
+    answer_state=screen.textinput(title=f"State & UT Guessed:{len(guessed_s_ut)}/37",prompt="Name Indian States & UT").title()
     if answer_state=="Exit":
         missing_s_ut=[]
         for state in state_ut:
