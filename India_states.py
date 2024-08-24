@@ -20,12 +20,18 @@ t.penup()
 
 while len(guessed_s_ut) < 37:
     answer_state=screen.textinput(title=f"State & UT Guessed:{len(guessed_s_ut)}/37",prompt="Name Indian States & UT").title()
-    if answer_state=="Exit":
-        missing_s_ut=[]
-        for state in state_ut:
-            if state not in guessed_s_ut:
-                missing_s_ut.append(state)
-            print(missing_s_ut)    
+    if answer_state is None:
+        break
+    elif answer_state=="Exit":
+        missing_state=[state for state in state_ut if state not in guessed_s_ut]
+        new_data=pandas.DataFrame(missing_state)
+        new_data.to_csv("remaining_states.csv", index=False)
+        # repalced this part of code with above 3 lines of code
+        # missing_s_ut=[]
+        # for state in state_ut:
+        #     if state not in guessed_s_ut:
+        #         missing_s_ut.append(state)
+        #     print(missing_s_ut) 
         break
 
     if answer_state in state_ut:
